@@ -77,5 +77,5 @@ checkOutBtn.addEventListener("click", async () => {
 
   // 🔹 Redirect to login page after logging out
   await signOut(auth);
-  window.location.href = "login.html";
+  window.location.href = "index.html";
 });
