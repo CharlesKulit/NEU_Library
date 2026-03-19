@@ -8,7 +8,7 @@ import { getDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-fires
 // 🔥 PROTECT PAGE
 onAuthStateChanged(auth, async (user) => {
   if (!user) {
-    window.location.href = "login.html";
+    window.location.href = "index.html";
     return;
   }
 
@@ -17,7 +17,7 @@ onAuthStateChanged(auth, async (user) => {
   if (!snap.exists() || snap.data().blocked === true) {
     alert("🚫 Access denied.");
     await signOut(auth);
-    window.location.href = "login.html";
+    window.location.href = "index.html";
   }
 });
 
