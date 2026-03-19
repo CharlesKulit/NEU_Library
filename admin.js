@@ -40,7 +40,7 @@ let allUsers = [];
 logoutBtn?.addEventListener('click', () => {
   signOut(auth)
     .then(() => {
-      window.location.href = "login.html"; // redirect to login page
+      window.location.href = "index.html"; // redirect to login page
     })
     .catch(err => {
       console.error("Logout failed:", err);
